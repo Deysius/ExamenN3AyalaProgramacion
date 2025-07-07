@@ -8,7 +8,7 @@ using System.Windows.Input;
 using ExamenN3AyalaProgramacion.Interfaces;
 using ExamenN3AyalaProgramacion.Models;
 
-namespace ExamenN3AyalaProgramacion.Models
+namespace ExamenN3AyalaProgramacion.ViewModels
 {
     public class ClienteViewModel : INotifyPropertyChanged
     {

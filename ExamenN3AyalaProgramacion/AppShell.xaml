@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="ExamenN3AyalaProgramacion.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:ExamenN3AyalaProgramacion"
-    Shell.FlyoutBehavior="Disabled"
-    Title="ExamenN3AyalaProgramacion">
+    xmlns:views="clr-namespace:ExamenN3AyalaProgramacion.Views"
+    x:Class="ExamenN3AyalaProgramacion.AppShell">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <TabBar>
+        <ShellContent Title="Registrar" ContentTemplate="{DataTemplate views:RegistroClientePage}" />
+        <ShellContent Title="Clientes" ContentTemplate="{DataTemplate views:ListaClientesPage}" />
+        <ShellContent Title="Logs" ContentTemplate="{DataTemplate views:LogPage}" />
+    </TabBar>
 </Shell>
