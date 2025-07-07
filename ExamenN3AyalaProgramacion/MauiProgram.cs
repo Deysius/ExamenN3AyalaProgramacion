@@ -20,7 +20,6 @@ namespace ExamenN3AyalaProgramacion
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
             builder.Services.AddSingleton<IClienteInterface, ClienteRepository>();
-
             builder.Services.AddTransient<ClienteViewModel>();
             builder.Services.AddTransient<RegistroClientePage>();
             builder.Services.AddTransient<ListaClientesPage>();
